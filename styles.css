@@ -1,0 +1,40 @@
+.container {
+  background-color: darkseagreen;
+  width: 1800px;
+  height: 1000px;
+}
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: cornflowerblue;
+  animation-name: move-box;
+  animation-duration: 3000ms;
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation-delay: 500ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes move-box {
+  0% {
+    transform: rotate(0);
+    background-color: cornflowerblue;
+  }
+  25% {
+    transform: translate(0, 700px);
+    background-color: khaki;
+  }
+  50% {
+    transform: translate(700px, 700px);
+    background-color: midnightblue;
+  }
+
+  75% {
+    transform: translate(700px, 0);
+    background-color: paleturquoise;
+  }
+  100% {
+    transform: translate(0, 0);
+    background-color: firebrick;
+  }
+}
